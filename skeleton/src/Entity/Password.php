@@ -42,7 +42,11 @@ class Password
     private $value;
 
     /**
+<<<<<<< HEAD
      * @ORM\ManyToOne(targetEntity="App\Entity\Category")
+=======
+     * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="passwords", cascade={"persist"})
+>>>>>>> 7a1be16f73c27a4260d7ac67fd91131425b22db5
      * @ORM\JoinColumn(nullable=true)
      */
     private $category;

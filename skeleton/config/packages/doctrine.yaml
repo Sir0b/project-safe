@@ -13,8 +13,8 @@ doctrine:
         port: 3306
         user: '%env(MYSQL_USER)%'
         password: '%env(MYSQL_PASSWORD)%'
-        driver: 'pdo_mysql'
-        server_version: '5.7'
+        driver: 'pdo_pgsql'
+        server_version: '11.2'
         charset: utf8mb4
         default_table_options:
             charset: utf8mb4
